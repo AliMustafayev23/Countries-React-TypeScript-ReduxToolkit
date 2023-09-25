@@ -6,17 +6,17 @@ const Header = () => {
   const mode = useSelector((state: RootState) => state.mode);
 
   const dispatch = useDispatch();
-  console.log("mode", mode.mode);
+
   return (
     <div
       className={
         mode.mode
-          ? " bg-white text-black py-8 border-b-2 border-grey"
-          : "bg-grey text-white py-8 border-b-2 border-grey"
+          ? " bg-white text-black py-8  font-nunito drop-shadow-xl"
+          : "bg-grey text-white py-8  font-nunito drop-shadow-xl"
       }
     >
       <div className="container flex items-center justify-around">
-        <h1>Where in the world?</h1>
+        <h1 className="text-xl">Where in the world?</h1>
         <div
           className={
             mode.mode === true

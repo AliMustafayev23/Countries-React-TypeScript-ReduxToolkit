@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Heebo:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:ital@1&family=Rubik&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
   margin: 0;
   padding: 0;

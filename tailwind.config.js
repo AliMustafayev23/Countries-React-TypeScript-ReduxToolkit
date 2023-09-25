@@ -2,6 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      "nunito": ["Nunito Sans", "sans-serif"],
+    },
     container: {
       center: true,
       padding: {
@@ -13,7 +16,7 @@ export default {
       },
     },
     colors: {
-      black: "#0c0a09",
+      black: "#202c36",
       grey: "#2B3844",
       white: "#fafafa",
     },

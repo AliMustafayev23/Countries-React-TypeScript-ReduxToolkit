@@ -3,7 +3,7 @@ import { Countries } from "./../../types/country";
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 interface CountriesState {
-  data: Countries | null;
+  data: [Countries] | null;
   loading: boolean;
   error: string;
 }
@@ -13,7 +13,7 @@ const initialState: CountriesState = {
   error: "",
 };
 export const getCountriesData = createAsyncThunk("fetchCountries", async () => {
-  const response = await axios.get<Countries>(
+  const response = await axios.get<[Countries]>(
     "https://restcountries.com/v3.1/all"
   );
   return response.data;
